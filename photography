@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheet_photography.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="photo_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="photo_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="photo_favicon/favicon-16x16.png">
+    <link rel="manifest" href="photo_favicon/site.webmanifest">
+
+    <title>Phillip's Photo Album</title>
+    <script type="text/javascript">
+
+    document.onload = function() {
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        const myModal = document.getElementById("myModal")
+    }
+
+    function show(link, cap, wide) { 
+        
+
+        //checking if the picture is a wide picture or not
+        if (wide == 1) {                
+            document.getElementById("img01").className = "modal-content-wide"
+        } else {
+            document.getElementById("img01").className = "modal-content"
+        }
+
+
+        //cleaining the caption and inserting it in the thml
+        document.getElementById("caption").innerHTML = "";
+        console.log(this);
+        if (cap == null) {
+            console.log("skipping");
+        } else {
+            document.getElementById("caption").innerHTML = cap;
+        }
+            myModal.style.display = "block";
+            document.getElementById("img01").src = "/assets/img/photoalbum/" + link
+        }
+    
+    </script>
+</head>
+<body>
+    <div class="start" style="height: 500px"> 
+        <h1>Phil's Photos</h1>
+        <p style="opacity: 0.3;">(click to enlarge)</p>
+    </div>
+
+    <div onclick="myModal.style.display = 'none'" id="myModal" class="modal">
+        <span onclick="myModal.style.display = 'none'" class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <section class="photoalbum">
+
+       <div loading="lazy" onclick="show('balloon.jpg', '', '')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/balloon.jpg');"></div>
+       <div loading="lazy" onclick="show('bridge.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/bridge.jpg');"></div>
+       <div loading="lazy" onclick="show('Moonlight.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Moonlight.jpg');"></div>
+       <div loading="lazy" onclick="show('silhouette.jpg', '', 1)" class="card" style="background-image: url('./assets/img/photoalbum/silhouette.jpg');"></div>
+       <div loading="lazy" onclick="show('Konge.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Konge.jpg');"></div>
+       <div loading="lazy" onclick="show('Alleyway.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Alleyway.jpg');"></div>
+       <div loading="lazy" onclick="show('Tika.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Tika.jpg');"></div>
+       <div loading="lazy" onclick="show('Simon_camera.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Simon_camera.jpg')"></div> 
+       <div loading="lazy" onclick="show('Sarah_with_light.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Sarah_with_light.jpg');"></div>
+       <div loading="lazy" onclick="show('lencloitre_drone.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/lencloitre_drone.jpg');"></div>
+       <div loading="lazy" onclick="show('Sarah_breath.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Sarah_breath.jpg');"></div> 
+       <div loading="lazy" onclick="show('Hill_with_blue_sky.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Hill_with_blue_sky.jpg');"></div> 
+       <div loading="lazy" onclick="show('Silja_goth.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Silja_goth.jpg');"></div> 
+       <div loading="lazy" onclick="show('mountains.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/mountains.jpg');"></div> 
+       <div loading="lazy" onclick="show('sarah.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/sarah.jpg');"></div> 
+       <div loading="lazy" onclick="show('silhouette.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/silhouette.jpg');"></div> 
+       <div loading="lazy" onclick="show('pano.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/pano.jpg');"></div> 
+       <div loading="lazy" onclick="show('')" class="card"></div> 
+    </section>
+
+</body>
+</html>

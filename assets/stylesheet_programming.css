@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+    line-height: 1.8rem;
+}
+
+.titles {
+    color: black;
+    margin-left: 2rem;
+    padding: 0 0 10px 2rem;
+}
+
+.lists {
+    font-size: 2rem;
+}
+
+.cardwrapper {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    background: linear-gradient(60deg, #ddd, white);
+}
+
+.contentbox {
+   width: 70%;
+   min-height: 11rem;
+   height: auto;
+   margin: 20px;
+   background-color: white;
+   cursor: pointer;
+   border: 1px solid grey;
+}
+
+.contentbox:hover {
+   filter: brightness(98%);
+}
+
+.textwrapper {
+	position: relative;
+	height: 100%;
+    width: 100%;
+}
+
+.box-headline {
+    position: relative;
+	margin: 0;
+    padding: 2rem 0 0 2rem;
+	font-size: 2.5rem;
+}
+
+.box-subheadline {
+    position: relative;
+	margin: 0;
+    padding: 0rem 0 0 2rem;
+}
+
+.box-desc {
+	padding: 0.5rem 1rem 2rem 2rem;
+	font-size: 20px;
+}
+
+.box-desc.cards {
+	padding: 0.3rem 1rem 0.3rem 2rem;
+	font-size: 20px;
+}
+
+
+.contentwrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contentbox img {
+	position: relative;;
+	max-width: 350px;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer; 
+    text-decoration: none;
+    color: white;
+    background-color: #212b2f;
+    padding: 0.8rem;
+    margin: 1rem 2rem 2rem;
+    transition: 0.3;
+    width: 30%;
+    justify-content: center;
+    
+  }
+
+.button:hover {
+    filter: brightness(90%)
+    
+  }

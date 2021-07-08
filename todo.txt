@@ -1,0 +1,28 @@
+#Fixes
+https://imagecompressor.com/
+fix the lower part of the site on the live version
+Put the link http://www.philliplundin.live on the cv template pdf and fix the linkedin link as well
+fix spellign mistakes
+fix the titles in cv on xs phone
+
+__________
+
+#Index adds
+Make a form for contact
+Take photos of cards of your own
+make a logo
+
+____________
+#Photography
+Implement Lazy load on the pictures
+redesign the title
+Add animation of the title
+
+
+__________
+#Programming 
+add buttons for extra direction like "Take me to code /w github logo"
+Implement a @media screen only max-width with dispaly block 
+Print what i learned from the projects 
+http://marty.com/canvas
+

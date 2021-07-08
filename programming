@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/stylesheet_programming.css">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+        <title>Phillip's Programming</title>
+    </head>
+    <body>
+        <div class="cardwrapper">
+        
+        <div style="height: 300px; display: flex; justify-content: center; padding-top: 100px"> 
+            <h1>Phil's Programming Projects</h1>
+        </div>
+
+            <div onclick="location.href='https://github.com/Nidocq/AnonymousGeoguessrAccounts';" class="contentbox">
+                <div class="contentwrapper">
+
+                    <div class="textwrapper">
+                        <p class="box-headline">Sudoku Solver</p>
+                        <p class="box-desc">Solve your sodukus with the backtracking algorithm.</p>
+                        <h3 class="box-subheadline">What i Learned</h3>
+                        <p class="box-desc cards">Algorithm, </p>
+                        <div class="button">
+                            <p>Go to Github</p><i class="fa fa-github fa-2x"></i>
+                        </div>
+                    </div>
+
+                    <div class="backg">
+                        <img src="https://media2.giphy.com/media/ThoIJil3jPvvKT7nuT/giphy.gif?cid=790b7611a3338077409f323c05a1127f2401789cbdd44280&rid=giphy.gif&ct=g">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='https://github.com/Nidocq/AnonymousGeoguessrAccounts';" class="contentbox">
+                <div class="contentwrapper">
+
+                    <div class="textwrapper">
+                        <p class="box-headline">Create anonymous Geoguessr accounts </p>
+                        <p class="box-desc">Geoguessr is an online geography game. They have implemented a 1 day-per-day play restriction on their site. With this script you will be able to make an anonymous account in just a few seconds and keep playing for as long as you want.</p>
+                        <h3 class="box-subheadline">What i Learned</h3>
+                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <div class="button">
+                            <p>Go to Github</p>
+                        </div>
+
+                    </div>
+
+                    <div class="backg">
+                        <img src="https://smartinwi.com/wp-content/uploads/2020/09/geoguessr-logo.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='https://github.com/Nidocq/VisualizeTheLottery';" class="contentbox">
+                <div class="contentwrapper">
+
+                    <div class="textwrapper">
+                        <p class="box-headline">Machine learning The lottery</p>
+                        <p class="box-desc">Python script that visualizes the learning capabilities of the most popular model classifiers, as well as making educated predictions to a valid future lottery ticket. It uses the data to train itself from the results archive on the euro-jackpot website https://www.euro-jackpot.net/en/results-archive-2020.</p>
+                        <h3 class="box-subheadline">What i Learned</h3>
+                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <div class="button">
+                            <p>Go to Github</p>
+                        </div>
+
+                    </div>
+
+                    <img src="assets/img/graph.png">
+                </div>
+            </div>
+            <div onclick="location.href='https://github.com/Nidocq/scrape_flagpedia';" class="contentbox">
+                <div class="contentwrapper">
+
+                    <div class="textwrapper">
+                        <p class="box-headline">Scraping all flags of the world</p>
+                        <p class="box-desc">High definition pngs downloaded from flagpedia Feel free to download the folder from here instead of scraping the site. Gain inspiration from the script</p>
+                        <h3 class="box-subheadline">What i Learned</h3>
+                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <div class="button">
+                            <p>Go to Github</p>
+                        </div>
+
+                    </div>
+
+                    <img src="assets/img/Flags.png">
+                </div>
+            </div>
+            <div onclick="location.href='https://github.com/Nidocq/Philcv';" class="contentbox">
+                <div class="contentwrapper">
+
+                    <div class="textwrapper">
+                        <p class="box-headline">This website you're on right now</p>
+                        <p class="box-desc">This site is a personal project of mine. I wanted to have a domain where I could share all my ideas and projects with the world. You can read the code for the website if you are interested.</p>
+                        <h3 class="box-subheadline">What i Learned</h3>
+                        <p class="box-desc cards">HTML, CSS, design, hosting</p>
+                        <div class="button">
+                            <p>Go to Github</p>
+                        </div>
+
+                    </div>
+
+                <img src="assets/img/pointing.jpg">
+            </div>
+        </div>
+
+        <a href="https://github.com/Nidocq" style="display:flex; justify-content: center; width: 100%; padding: 30px; font-size: 1.5rem;">And other projects here</a>
+        
+    </body>
+</html>
+

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Phillip's Website </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="./assets/stylesheet.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="index_favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="index_favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="index_favicon/favicon-16x16.png">
+		<link rel="manifest" href="index_favicon/site.webmanifest">
+				
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+	</head>
+	
+	<body>
+
+		<script>
+		var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+	    };
+
+	    TxtType.prototype.tick = function() {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+	
+			if (this.isDeleting) {
+			this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+			this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 160;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[Math.floor(Math.random() * elements.length)].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[Math.floor(Math.random() * elements.length)], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; font-family: Architects Daughter; margin-left: 5px}";
+        document.body.appendChild(css);
+    };
+
+		</script>
+
+
+	<!-- Navbar (sit on top) -->
+	<nav class="navbarr fixed-topp ">
+	  <ul class="navbarr-nav">
+		<li class="navbar-item">
+			<a href="#home" class="navbar-link"><i class="fa fa-bars"></i> HOME</a>
+		</li>
+
+		<li class="navbar-item">
+	    		<a href="#about" class="navbar-link"><i class="fa fa-user"></i> ABOUT</a>
+		</li>
+
+		<li class="navbar-item">
+			<a href="#CV" class="navbar-link"><i class="fa fa-address-card-o"></i> CV</a>
+		</li>
+
+		<li class="navbar-item">
+			<a href="#projects" class="navbar-link"><i class="fa fa-th"></i> PROJECTS</a>
+		</li>
+
+	  </ul>
+	</nav>
+
+	<!-- LANDING PAGE --> 
+	<!-- First Parallax Image with Logo Text -->
+	<div class="bgimg-1" id="home">
+		<div class="centerdiv" style="padding: 14px;">
+			<img class="bglogo" src="assets/img/imphil.png">
+			<!-- <span style="font-size: 4em ; color:  #FFFBFE; display: block ruby">I'M PHIL</span> -->
+			</br>
+			<h1 class="subtitle">
+				<a href="#" style="color: #FFFBFE; text-decoration: none" class="typewrite" data-period="2000" data-type='[ "I Am Curious", "I Am Creative", "I Love to Develop", "I Take Pictures", "I Learn Languages", "I Love Learning", "Are you still there?"]'></a>
+				  <span class="wrap" style="overflow:hidden"> </span>
+				</a>
+			</h1>
+
+
+	  	</div>
+	</div>
+
+	<!-- LANDING PAGE END --> 
+
+	<!-- Container (About Section) -->
+
+	<div class="backgroundcolor" id="about" style="min-height: 100%; width:100%; overflow:hidden"> 
+
+		
+		<div class="triangle"></div>
+		<br>
+
+		<div class="about-wrapper dropin">
+
+				<div class="imagecontainer aligncenter">
+					<img src="./assets/img/portraitnobackground.png" alt="Phil portrait" class="aboutimage aligncenter" >
+							
+				</div>
+
+				<div class="aboutcontainer alignleft">
+					<h2 class="aboutme" >HELLO 👋🏼</h2>
+					<div>
+						<p class="aboutmetext">My name is Phillip Lundin. I am an extremely motivated individual who constantly wants to develop their skills. I have always been curious by nature which makes me grow professionally and personally. My main flair is within tech but I also possees other multidisciplinary capabilities. I am currently looking for an opportunity to utilise my technical skills in a challenging working environment and hopefully become a valuable asset for you</p>
+					</div>
+	
+					
+				</div>
+
+				<div class="nametitle aligncenter">
+					<h1 class="name"><b>Phillip Lundin</b></h1>
+
+					<h2 class="name"><em>Curious Technology Enthusiast</em></h2>
+				</div>
+
+				<div class="skillset aligncenter">
+					<div class="skillsetcontainer">
+						<span class="spantitles">HTML & CSS 🔨🏗</span>
+						<div class="greycontainer">
+							<div class="skills html" style="width:60%">60%</div>
+						</div>
+					</div>
+					<div class="skillsetcontainer">
+						<span class="spantitles">Python 🐍</span>
+						<div class="greycontainer">
+							<div class="skills html" style="width:80%">80%</div>
+						</div>
+					</div>
+					<div class="skillsetcontainer">
+						<span class="spantitles">Linux 🐧</span>
+						<div class="greycontainer">
+							<div class="skills html" style="width: 60%">60%</div>
+						</div>
+					</div>
+					<div class="skillsetcontainer">
+						<span class="spantitles">Photography 📷</span>
+						<div class="greycontainer">
+							<div class="skills html" style="width: 70%">70%</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="iconrow aligncenter">
+					<ul class="iconbox" style="display: inline-flex">
+						<li>
+							<a href="https://linkedin.com/in/philliplundin"><i class="fa fa-linkedin fa-2x temp"></i> </a>
+						</li>
+
+						<li>
+							<a href="https://github.com/nidocq"><i class="fa fa-github fa-2x"></i></a>
+						</li>
+
+						<li>
+							<a href="mailto:phillip.linnemann.lundin@gmail.com"><i class="fa fa-envelope fa-2x"></i> </a>
+						</li>
+
+						<li>
+							<a href="iMessage://42765231"><i class="fa fa-paper-plane fa-2x temp"></i> </a>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="dofus">
+
+				</div>
+		</div>
+	</div>
+
+	<!-- ABOUT SECTION END --> 
+
+
+
+
+
+	<!-- EDUCATION -->
+
+	<div class="bgimg-2 centerParent" id="CV"> 
+		<span class="centerChild paraspans">CURRICULUM VITAE</span>
+	</div>
+
+	<div class="education-wrapper backgroundcolor" style="min-height:100%"> 
+		<div class="firstalign">
+			<div class="titles">
+				<h1 class="career">Career</h1>
+			</div>
+	
+			<div class="timeline first">
+				<div class="section right">						
+					<div class="content right">
+						<h4><b>Bagsværd Friskole</b>, Substitute Teacher</h4>
+						<p>JAN2020-SEP2020</p>
+						<p>Responsible for teaching classrooms ranging from pre-school to high-school in various subjects.</p>
+						<p>Understanding the concepts of conflict management.</p>
+					</div>
+					<div class="logo left">
+						<img src="./assets/img/bagsværd.png">
+					</div>
+				</div>
+		
+				<div class="section left">
+					<div class="content left">
+						<h4><b>iOS Application</b> - OpenUp</h4>
+						<p>2020</p>
+						<p>Developing and deploying an iOS application that lets you initiate a conversation with others on various social media by striking up prewritten jokes, comments or stories.</p>
+						<p>Creating a landingpage for the application <a style="color:blue;" href="https://openup-app.webflow.io">https://openup-app.webflow.io<i class="fa fa-arrow-up"></i></a></p>
+					</div>
+					<div class="logo right">
+						<img src="./assets/img/openup.png">
+					</div>
+				</div>
+	
+				<div class="section right">
+					<div class="content right">
+						<h4><b>Multiverse - Kogama</b>, Quality Assurance</h4>
+						<p>APR2017-AUG2019</p>
+						<p>Ensuring the quality of the game for more than 22 million users by executing various procedures and testing each week.</p>
+						<p>Practising good work efficiency between different teams through procedures from Trello and Jira.</p>
+					</div>
+					<div class="logo left">
+						<img src="./assets/img/kogama.png">
+					</div>
+				</div>
+	
+				<div class="secret">
+					<p>That's it :))))</p>
+				</div>
+		
+			</div>
+		</div>
+
+		<div class="secondalign">
+		
+			<div class="titles">
+				<h1 style="margin-right: 150px; font-size: 2.6rem">Education</h1>
+			</div>
+		
+			<div class="timeline second">
+				<div class="section left" >
+					<div class="content">
+						<h4><b><u>Expecting to</u> attend Copenhagen Business School,</b><br>Bsc in Business Administration and Digital Management</h4>							
+						<p>2021-2024</p>
+						<p>Research-based, interdisciplinary programme focused on the opportunities and challenges of digital transformations for corporate and organizational affairs with insight in management studies, digital technologies and data and key issues in business administration.</p>
+					</div>
+					<div class="logo right">
+						<img src="./assets/img/cbs.png">
+					</div>
+				</div>
+	
+				<div class="section right" >
+					<div class="content right ">
+						<h4><b>NEXT Sukkertoppen General Secondary Education,</b> Communication & IT</h4>							
+						<p>2016-2019</p>
+						<p>Pictures, Design, Sound, Marketing strategies</p>
+					</div>
+					<div class="logo left">
+						<img src="./assets/img/htx.png">
+					</div>
+				</div>
+				<div class="secret">
+					<p>Much Education wow</p>
+				</div>
+			</div>
+		</div>
+	
+		<div style="height: 5em; display: relative;" >
+			<!-- btn btn-info -->
+			<button onmouseleave="this.style.opacity='1'" onmouseover="this.style.opacity='0.7'" onclick="window.open('/assets/PhilCV.pdf', '_blank');" class="button cv" style="position: absolute; left: 50%; transform: translateX(-50%); ">
+				<a style="color: white">Read The CV as pdf</a>
+			</button>
+		</div>
+	</div>
+
+		
+
+
+
+
+	<!-- EDUCATION END --> 
+
+
+
+	<!-- PERSONAL PROJECTS --> 
+	<!-- Third Parallax Image with Portfolio Text -->
+	<div class="bgimg-3 centerParent" id="projects">
+	     <span class="centerChild paraspans">PERSONAL PROJECTS</span>
+	</div>
+
+
+	<div class="project-wrapper backgroundcolor">
+		<div class="about-cards projects">
+
+			<div onclick="location.href='programming';" class="project-cards" style="cursor: pointer; background-image: url('./assets/img/programming.jpg');">
+				<div class="backgrounddiv">
+					<!-- <span style="font-size: 4em; filter:grayscale(100%)"></span> -->
+					<i class="fa fa-laptop fa-5x"></i><h2>Programming</h2>
+					<p>Watch my projects and the code for this site.</p>
+					<a href="./programming" class="button cardbutton">Learn more</a>
+				</div>
+			</div>
+
+			<div onclick="location.href='photography';" class="project-cards" style="cursor: pointer; background-image: url('./assets/img/camera.jpg');">
+				<div class="backgrounddiv">
+					<i class="fa fa-camera-retro fa-5x"></i><h2>Photography</h2>
+					<p>Watch my photos in a nice minimalistic design</p>
+					<a href="./photography" class="button cardbutton">Learn more</a>
+				</div>
+			</div>
+
+			<div onclick="location.href='notes';" class="project-cards" style="cursor: pointer; background-image: url('./assets/img/language.jpg');">
+				<div class="backgrounddiv">
+					<!-- fa fa-clipboard fa-5x -->
+					<i class="fa fa-sticky-note fa-5x"></i><h2>Notes / Explore</h2>
+					<p>Learn and explore everything from photography, psychology and finance</p>
+					<a href="./notes" class="button cardbutton">Learn more</a>
+				</div>
+			</div>
+
+			<div onclick="location.href='music';" class="project-cards" style="cursor: pointer; background-image: url('./assets/img/music.jpg');">
+				<div class="backgrounddiv">
+					<i class="fa fa-music fa-5x"></i><h2>Music</h2>
+					<p>Listen to the music that i have created, music really enables you to express yourself</p>
+					<a href="./music" class="button cardbutton">Learn more</a>
+				</div>
+			</div>
+
+			<!-- Footer -->
+
+			<div class="footercontent">
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+				</g>
+				</svg>
+				<div class="whats">
+					<div class="what">
+						<p>Coded and Designed by Phillip Linnemann Lundin </p>
+						<p>2021</p>
+						<p> +45 42 76 52 31 | </p>
+						<p> phillip.linnemann.lundin[at]gmail.com </p>
+					</div>
+				<br>
+					<div class="what2">
+						<a href="https://github.com/nidocq"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://linkedin.com/in/philliplundin"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="mailto:phillip.linnemann.lundin@gmail.com"><i class="fa fa-envelope fa-2x"></i> </a>
+						<a href="iMessage://42765231"><i class="fa fa-paper-plane fa-2x temp"></i> </a>
+			
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PERSONAL PROJECTS END -->
+		<!-- Footer end  -->
+
+		
+		
+
+	</div>
+
+
+	
+
+	
+
+	 
+	</body>
+</html>
+
