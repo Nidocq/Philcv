@@ -9,6 +9,15 @@
         <title>Phillip's Programming</title>
     </head>
     <body>
+        <nav class="navbarr fixed-topp ">
+            <ul class="navbarr-nav">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link"><i class="fa fa-backward"></i> HOME</a>
+                </li>
+        
+            </ul>
+	    </nav>
+
         <div class="cardwrapper">
         
         <div style="height: 300px; display: flex; justify-content: center; padding-top: 100px"> 
@@ -21,8 +30,8 @@
                     <div class="textwrapper">
                         <p class="box-headline">Sudoku Solver</p>
                         <p class="box-desc">Solve your sodukus with the backtracking algorithm.</p>
-                        <h3 class="box-subheadline">What i Learned</h3>
-                        <p class="box-desc cards">Algorithm, </p>
+                        <h3 class="box-subheadline">What i Learned:</h3>
+                        <p class="box-desc cards">Recursion, object oriented programming</p>
                         <div class="button">
                             <p>Go to Github</p><i class="fa fa-github fa-2x"></i>
                         </div>
@@ -40,8 +49,8 @@
                     <div class="textwrapper">
                         <p class="box-headline">Create anonymous Geoguessr accounts </p>
                         <p class="box-desc">Geoguessr is an online geography game. They have implemented a 1 day-per-day play restriction on their site. With this script you will be able to make an anonymous account in just a few seconds and keep playing for as long as you want.</p>
-                        <h3 class="box-subheadline">What i Learned</h3>
-                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <h3 class="box-subheadline">What i Learned:</h3>
+                        <p class="box-desc cards">Requests, cookies, regex, scraping</p>
                         <div class="button">
                             <p>Go to Github</p>
                         </div>
@@ -60,8 +69,8 @@
                     <div class="textwrapper">
                         <p class="box-headline">Machine learning The lottery</p>
                         <p class="box-desc">Python script that visualizes the learning capabilities of the most popular model classifiers, as well as making educated predictions to a valid future lottery ticket. It uses the data to train itself from the results archive on the euro-jackpot website https://www.euro-jackpot.net/en/results-archive-2020.</p>
-                        <h3 class="box-subheadline">What i Learned</h3>
-                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <h3 class="box-subheadline">What i Learned:</h3>
+                        <p class="box-desc cards">Machine Learning, scraping, data visualization</p>
                         <div class="button">
                             <p>Go to Github</p>
                         </div>
@@ -77,8 +86,8 @@
                     <div class="textwrapper">
                         <p class="box-headline">Scraping all flags of the world</p>
                         <p class="box-desc">High definition pngs downloaded from flagpedia Feel free to download the folder from here instead of scraping the site. Gain inspiration from the script</p>
-                        <h3 class="box-subheadline">What i Learned</h3>
-                        <p class="box-desc cards">Networking, cookies, regex, scraping</p>
+                        <h3 class="box-subheadline">What i Learned:</h3>
+                        <p class="box-desc cards">Scraping, requests</p>
                         <div class="button">
                             <p>Go to Github</p>
                         </div>
@@ -94,8 +103,8 @@
                     <div class="textwrapper">
                         <p class="box-headline">This website you're on right now</p>
                         <p class="box-desc">This site is a personal project of mine. I wanted to have a domain where I could share all my ideas and projects with the world. You can read the code for the website if you are interested.</p>
-                        <h3 class="box-subheadline">What i Learned</h3>
-                        <p class="box-desc cards">HTML, CSS, design, hosting</p>
+                        <h3 class="box-subheadline">What i Learned:</h3>
+                        <p class="box-desc cards">HTML, CSS, design, hosting, DNS</p>
                         <div class="button">
                             <p>Go to Github</p>
                         </div>

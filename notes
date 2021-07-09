@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheet_notes.css">
     <title>Phillip's Notes</title>
 </head>
 <body>
+    <nav class="navbarr fixed-topp ">
+        <ul class="navbarr-nav">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link"><i class="fa fa-backward"></i> HOME</a>
+            </li>
+        </ul>
+	</nav>
     <h1> This is the notes of Phillip</h1>
     <h4> This is where i want to share all the notes and knowledge</h4>
     <p> It will mostly be throughout my time in CBS to help others with the material </p>

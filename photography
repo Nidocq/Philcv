@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/stylesheet_photography.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="photo_favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="photo_favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="photo_favicon/favicon-16x16.png">
     <link rel="manifest" href="photo_favicon/site.webmanifest">
@@ -46,6 +47,16 @@
     </script>
 </head>
 <body>
+
+    <nav class="navbarr fixed-topp ">
+        <ul class="navbarr-nav">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link"><i class="fa fa-backward"></i> HOME</a>
+            </li>
+    
+        </ul>
+    </nav>
+
     <div class="start" style="height: 500px"> 
         <h1>Phil's Photos</h1>
         <p style="opacity: 0.3;">(click to enlarge)</p>
