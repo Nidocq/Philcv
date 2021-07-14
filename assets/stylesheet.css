@@ -256,6 +256,7 @@ h2.name {
   align-self: center;
   justify-self: center;
   width: 100%;
+  text-align: center;
 }
 
 .aboutme {
@@ -747,7 +748,7 @@ a.button {
   margin: 0;
 }
 
-.whats {
+.footerinformation {
   width: 100%;
   padding: 40px 0;
   background: white;
@@ -760,23 +761,26 @@ a.button {
   z-index: 2;
 }
 
-.footercontent .what {
+.footercontent .footertext {
   position: relative;
   display: inline-flex;
   display:-webkit-inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.footercontent .what p {
+.footercontent .footertext p {
   padding: 0 5px 0;
 
 }
 
-.footercontent div.what2 {
+.footercontent div.footericons {
   display: inline-block;
   position: relative;
 }
 
-.footercontent div.what2 a {
+.footercontent div.footericons a {
   color: var(--color4);
   padding: 0 4px 0;
 }
@@ -899,7 +903,7 @@ a.button {
     text-align: center;
   }
 
-  .what {
+  .footertext {
     font-size: .7rem;
     display: flex;
     display:-webkit-flex;

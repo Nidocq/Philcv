@@ -12,7 +12,7 @@
         <nav class="navbarr fixed-topp ">
             <ul class="navbarr-nav">
                 <li class="navbar-item">
-                    <a href="index.html" class="navbar-link"><i class="fa fa-backward"></i> HOME</a>
+                    <a href="/#projects" class="navbar-link"><i class="fa fa-backward"></i> HOME</a>
                 </li>
         
             </ul>
