@@ -256,7 +256,6 @@ h2.name {
   align-self: center;
   justify-self: center;
   width: 100%;
-  text-align: center;
 }
 
 .aboutme {
@@ -283,6 +282,11 @@ h2.name {
   filter: saturate(94%);
 
 }
+
+.nametitle {
+  text-align: center;
+}
+
 .nametitle h1, .nametitle h2 {
   align-self: center;
   justify-self: center;
@@ -543,11 +547,10 @@ div.iconrow ul.iconbox li a {
   background-size: cover;
 }
 
-.section div.logo.left {
-  text-align: left;
-}
-.section div.logo.right {
-  text-align: right;
+.section div.logo.left, .section div.logo.right {
+  /*text-align: left; */
+  display: flex;
+  justify-content: center;
 }
 
 .content {

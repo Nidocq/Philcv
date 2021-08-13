@@ -69,7 +69,7 @@
     </div>
 
     <section class="photoalbum">
-
+        <!-- show('linktofile', 'alt text below picture' '1=wide') -->
        <div loading="lazy" onclick="show('balloon.jpg', '', '')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/balloon.jpg');"></div>
        <div loading="lazy" onclick="show('bridge.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/bridge.jpg');"></div>
        <div loading="lazy" onclick="show('Moonlight.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Moonlight.jpg');"></div>
