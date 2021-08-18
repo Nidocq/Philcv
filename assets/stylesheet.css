@@ -970,7 +970,7 @@ a.button {
     display: none;
   }
 
-  div.logo.left, div.logo.right {
+  .section div.logo.left, .section div.logo.right { 
     display: none;
     align-self: center;
   }

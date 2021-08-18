@@ -73,20 +73,27 @@
        <div loading="lazy" onclick="show('balloon.jpg', '', '')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/balloon.jpg');"></div>
        <div loading="lazy" onclick="show('bridge.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/bridge.jpg');"></div>
        <div loading="lazy" onclick="show('Moonlight.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Moonlight.jpg');"></div>
-       <div loading="lazy" onclick="show('silhouette.jpg', '', 1)" class="card" style="background-image: url('./assets/img/photoalbum/silhouette.jpg');"></div>
-       <div loading="lazy" onclick="show('Konge.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Konge.jpg');"></div>
+       <div loading="lazy" onclick="show('avoriazmountain.jpg', 'text som dette', 1)" class="card" style="background-image: url('./assets/img/photoalbum/avoriazmountain.jpg');"></div>
+       <div loading="lazy" onclick="show('Konge.jpg', 'https://www.instagram.com/manaskatyal_/', '')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Konge.jpg');"></div>
        <div loading="lazy" onclick="show('Alleyway.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Alleyway.jpg');"></div>
        <div loading="lazy" onclick="show('Tika.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Tika.jpg');"></div>
-       <div loading="lazy" onclick="show('Simon_camera.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Simon_camera.jpg')"></div> 
+       <div loading="lazy" onclick="show('Simon_camera.jpg', 'https://www.instagram.com/kagemand99/', '')" class="card" style="background-image: url('./assets/img/photoalbum/Simon_camera.jpg')"></div> 
        <div loading="lazy" onclick="show('Sarah_with_light.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Sarah_with_light.jpg');"></div>
        <div loading="lazy" onclick="show('lencloitre_drone.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/lencloitre_drone.jpg');"></div>
        <div loading="lazy" onclick="show('Sarah_breath.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Sarah_breath.jpg');"></div> 
        <div loading="lazy" onclick="show('Hill_with_blue_sky.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Hill_with_blue_sky.jpg');"></div> 
-       <div loading="lazy" onclick="show('Silja_goth.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Silja_goth.jpg');"></div> 
+       <div loading="lazy" onclick="show('Silja_goth.jpg', 'https://www.instagram.com/silja_bach_/', '')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Silja_goth.jpg');"></div> 
        <div loading="lazy" onclick="show('mountains.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/mountains.jpg');"></div> 
        <div loading="lazy" onclick="show('sarah.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/sarah.jpg');"></div> 
        <div loading="lazy" onclick="show('silhouette.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/silhouette.jpg');"></div> 
+       <div loading="lazy" onclick="show('Cersey.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Cersey.jpg');"></div> 
        <div loading="lazy" onclick="show('pano.jpg', '', 1)" class="card card-wide" style="background-image: url('./assets/img/photoalbum/pano.jpg');"></div> 
+       <div loading="lazy" onclick="show('Cersey_orange.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Cersey_orange.jpg');"></div> 
+       <div loading="lazy" onclick="show('Cersey_orange3.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Cersey_orange3.jpg');"></div> 
+       <div loading="lazy" onclick="show('')" class="card"></div> 
+       <div loading="lazy" onclick="show('Wilma_orange.jpg')" class="card card-tall" style="background-image: url('./assets/img/photoalbum/Wilma_orange.jpg');"></div> 
+       <div loading="lazy" onclick="show('')" class="card"></div> 
+       <div loading="lazy" onclick="show('Cersey_orange2.jpg')" class="card" style="background-image: url('./assets/img/photoalbum/Cersey_orange2.jpg');"></div> 
        <div loading="lazy" onclick="show('')" class="card"></div> 
     </section>
 
